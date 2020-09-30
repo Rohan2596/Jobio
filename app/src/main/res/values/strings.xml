@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Jobio</string>
+    <string name="image_clapping">Clapping hands</string>
+    <string name="user_name">Hello Rohan</string>
+    <string name="main_text">Find Your Dream Jobs!</string>
 </resources>

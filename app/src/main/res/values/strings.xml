@@ -3,4 +3,8 @@
     <string name="image_clapping">Clapping hands</string>
     <string name="user_name">Hello Rohan</string>
     <string name="main_text">Find Your Dream Jobs!</string>
+    <string name="popular_jobs">Popular Jobs</string>
+    <string name="view_all">View All</string>
+    <string name="category_text">Category</string>
+    <string name="recent_jobs">Recent Jobs</string>
 </resources>

@@ -14,52 +14,175 @@
         android:elevation="10dp"
 
         android:textAlignment="textStart"
-        android:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:title="@string/app_name"
+        android:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
         tools:ignore="MissingConstraints" />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
 
-    >
     <LinearLayout
-        android:id="@+id/linerLayout_header"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linerLayout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="@string/user_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/colorBlack"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imageview_clapping"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image_clapping"
+                app:srcCompat="@mipmap/ic_clapping"
+                tools:srcCompat="@mipmap/ic_clapping" />
+
+
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/user_name"
+            android:id="@+id/header_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorBlack"
             android:fontFamily="@font/poppins"
-            android:textStyle="normal"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:text="@string/user_name" />
+            android:text="@string/main_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageview_clapping"
-            android:layout_width="90dp"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/image_clapping"
-            app:srcCompat="@mipmap/ic_clapping"
-            tools:srcCompat="@mipmap/ic_clapping" />
+        <LinearLayout
+            android:id="@+id/linerLayout_popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/innerLayout_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/popular_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="@string/popular_jobs"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/popular_text_viewall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:text="@string/view_all"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#7d40f4" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linerLayout_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/innerLayout_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/category_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="@string/category_text"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/category_text_viewall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:text="@string/view_all"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#7d40f4" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerLayout_recent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/innerLayout_recent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/recent_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="@string/recent_jobs"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/recent_text_viewall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:text="@string/view_all"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#7d40f4" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/header_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorBlack"
-        android:fontFamily="@font/poppins"
-        android:textStyle="bold"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        android:text="@string/main_text" />
-</LinearLayout>
+
 </LinearLayout>

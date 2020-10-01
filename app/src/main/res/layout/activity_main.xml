@@ -62,6 +62,11 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="@color/colorBlack"
             android:textStyle="bold" />
+        <include
+            layout="@layout/search_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
             android:id="@+id/linerLayout_popular"
@@ -83,9 +88,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.25"
                     android:text="@string/popular_jobs"
-                    android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/colorBlack" />
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -96,6 +101,7 @@
 
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linerLayout_category"
             android:layout_width="match_parent"
@@ -116,9 +122,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.25"
                     android:text="@string/category_text"
-                    android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/colorBlack" />
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -126,20 +132,18 @@
                     app:srcCompat="@drawable/ic_baseline_arrow_right" />
 
 
-
-
             </LinearLayout>
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/category_recycler_view"
-    android:orientation="horizontal"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/category_recycler_view"
+                android:layout_width="match_parent"
 
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
 
-</androidx.recyclerview.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 
@@ -163,9 +167,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.25"
                     android:text="@string/recent_jobs"
-                    android:textStyle="bold"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/colorBlack" />
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -177,7 +181,8 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+           </LinearLayout>
+
 
 
 </LinearLayout>

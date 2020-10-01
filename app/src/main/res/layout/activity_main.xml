@@ -137,8 +137,21 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="#7d40f4" />
 
+
+
+
             </LinearLayout>
 
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/category_recycler_view"
+    android:orientation="horizontal"
+
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 

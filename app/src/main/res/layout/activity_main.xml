@@ -137,7 +137,6 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/category_recycler_view"
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="10dp"
@@ -178,7 +177,13 @@
 
             </LinearLayout>
 
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recent_job_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
         </LinearLayout>
 
            </LinearLayout>

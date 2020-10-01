@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="@string/main_text"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/colorBlack"
             android:textStyle="bold" />
         <include
@@ -177,13 +177,15 @@
 
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recent_job_recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"/>
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recent_job_recycler_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:paddingBottom="10dp"/>-->
+
+            <include layout="@layout/recent_jobs_layout"/>
         </LinearLayout>
 
            </LinearLayout>

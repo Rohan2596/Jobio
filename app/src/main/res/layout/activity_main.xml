@@ -87,16 +87,10 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/popular_text_viewall"
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:text="@string/view_all"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="#7d40f4" />
+                    app:srcCompat="@drawable/ic_baseline_arrow_right" />
 
             </LinearLayout>
 
@@ -126,16 +120,10 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/category_text_viewall"
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:text="@string/view_all"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="#7d40f4" />
+                    app:srcCompat="@drawable/ic_baseline_arrow_right" />
 
 
 
@@ -179,16 +167,10 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@color/colorBlack" />
 
-                <TextView
-                    android:id="@+id/recent_text_viewall"
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:text="@string/view_all"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="#7d40f4" />
+                    app:srcCompat="@drawable/ic_baseline_arrow_right" />
 
             </LinearLayout>
 

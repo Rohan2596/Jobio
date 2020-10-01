@@ -29,10 +29,11 @@ public class MainActivity extends AppCompatActivity {
         toolbar=findViewById(R.id.toolbar);
         setActionBar(toolbar);
         /**/
-        category_list.add("Service");
-        category_list.add("Ui/Ux");
-        category_list.add("Developer");
-        category_list.add("Operations");
+        category_list.add("Design");
+        category_list.add("Software");
+        category_list.add("Network");
+        category_list.add("Data");
+        category_list.add("Testing");
         category_layout_manager=new LinearLayoutManager(MainActivity.this, LinearLayoutManager.HORIZONTAL, false);
 
 

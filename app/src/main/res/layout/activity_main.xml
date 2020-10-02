@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="10dp"
-
         android:textAlignment="textStart"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:title="@string/app_name"
@@ -80,8 +79,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp">
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
 
                 <TextView
                     android:id="@+id/popular_text"
@@ -95,7 +94,7 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     app:srcCompat="@drawable/ic_baseline_arrow_right" />
 
             </LinearLayout>
@@ -104,8 +103,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"/>
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
 
         </LinearLayout>
 
@@ -120,8 +119,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp">
+                android:paddingTop="2.5dp"
+                android:paddingBottom="2.5dp">
 
                 <TextView
                     android:id="@+id/category_text"
@@ -135,7 +134,7 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     app:srcCompat="@drawable/ic_baseline_arrow_right" />
 
 
@@ -146,8 +145,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp">
+                android:paddingTop="2.5dp"
+                android:paddingBottom="2.5dp">
 
             </androidx.recyclerview.widget.RecyclerView>
 
@@ -164,8 +163,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp">
+                android:paddingTop="2.5dp"
+                android:paddingBottom="2.5dp">
 
                 <TextView
                     android:id="@+id/recent_text"
@@ -179,7 +178,7 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     app:srcCompat="@drawable/ic_baseline_arrow_right" />
 
             </LinearLayout>
@@ -189,10 +188,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp" />
+                android:paddingTop="2.5dp"
+                android:paddingBottom="2.5dp" />
 
-            <!--            <include layout="@layout/recent_jobs_layout"/>-->
         </LinearLayout>
 
     </LinearLayout>

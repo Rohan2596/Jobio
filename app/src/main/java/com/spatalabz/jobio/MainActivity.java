@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Toolbar;
 
 import com.spatalabz.jobio.adapter.CategoryAdapter;
+import com.spatalabz.jobio.adapter.PopularJobAdapter;
 import com.spatalabz.jobio.adapter.RecentJobsAdapter;
 import com.spatalabz.jobio.model.Job;
 
@@ -19,13 +20,15 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    RecyclerView category_recycler_view,recent_jobs_view;
-    RecyclerView.LayoutManager category_layout_manager,recent_layout_manager;
+    RecyclerView category_recycler_view,recent_jobs_view,popular_jobs_view;
+    RecyclerView.LayoutManager category_layout_manager,recent_layout_manager,popular_layout_manager;
     CategoryAdapter categoryAdapter;
     RecentJobsAdapter recentJobsAdapter;
+    PopularJobAdapter popularJobAdapter;
 
     ArrayList category_list=new ArrayList();
     ArrayList recent_jobs_list=new ArrayList();
+    ArrayList popular_jobs_list=new ArrayList();
 
 
     @Override
@@ -64,6 +67,23 @@ public class MainActivity extends AppCompatActivity {
          recent_jobs_view=findViewById(R.id.recent_job_recycler_view);
          recent_jobs_view.setLayoutManager(recent_layout_manager);
          recent_jobs_view.setAdapter(recentJobsAdapter);
+         /*
+         * Popular Jobs Sections recycler View
+         * */
+        popular_jobs_list.add(new Job("Product Engineer","Uber","$70/hr","$70k/yr"));
+        popular_jobs_list.add(new Job("UI/UX Engineer","Google","$100/hr","$100k/yr"));
+        popular_jobs_list.add(new Job("Software Engineer","Microsoft","$60/hr","$50k/yr"));
+        popular_jobs_list.add(new Job("Data Engineer","Saptalabz Solutions","$40/hr","$80k/yr"));
+        popular_jobs_list.add(new Job("Public Relations","Amazon","$80/hr","$200k/yr"));
+        popular_jobs_list.add(new Job("Lead Manager","Apple","$120/hr","$220k/yr"));
+
+
+        popular_jobs_view=findViewById(R.id.popular_recycler_view);
+         popular_layout_manager=new LinearLayoutManager(MainActivity.this,LinearLayoutManager.HORIZONTAL,false);
+         popular_jobs_view.setLayoutManager(popular_layout_manager);
+         popularJobAdapter=new PopularJobAdapter(popular_jobs_list,MainActivity.this);
+         popular_jobs_view.setAdapter(popularJobAdapter);
+
 
     }
 }

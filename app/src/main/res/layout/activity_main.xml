@@ -99,8 +99,14 @@
                     app:srcCompat="@drawable/ic_baseline_arrow_right" />
 
             </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popular_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
 
-            <include layout="@layout/popular_jobs_layout" />
         </LinearLayout>
 
         <LinearLayout

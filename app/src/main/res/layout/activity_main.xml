@@ -62,11 +62,12 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/colorBlack"
             android:textStyle="bold" />
+
         <include
             layout="@layout/search_layout"
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:id="@+id/linerLayout_popular"
@@ -99,7 +100,7 @@
 
             </LinearLayout>
 
-
+            <include layout="@layout/popular_jobs_layout" />
         </LinearLayout>
 
         <LinearLayout
@@ -183,13 +184,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="10dp"
-                android:paddingBottom="10dp"/>
+                android:paddingBottom="10dp" />
 
-<!--            <include layout="@layout/recent_jobs_layout"/>-->
+            <!--            <include layout="@layout/recent_jobs_layout"/>-->
         </LinearLayout>
 
-           </LinearLayout>
-
+    </LinearLayout>
 
 
 </LinearLayout>

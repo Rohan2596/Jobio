@@ -5,8 +5,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
 import com.spatalabz.jobio.adapter.CategoryAdapter;
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     CategoryAdapter categoryAdapter;
     RecentJobsAdapter recentJobsAdapter;
     PopularJobAdapter popularJobAdapter;
+    Intent toJobListing;
+    ImageView popular_view_all,recent_view_all;
 
     ArrayList category_list=new ArrayList();
     ArrayList recent_jobs_list=new ArrayList();
@@ -67,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
          recent_jobs_view=findViewById(R.id.recent_job_recycler_view);
          recent_jobs_view.setLayoutManager(recent_layout_manager);
          recent_jobs_view.setAdapter(recentJobsAdapter);
+
+         recent_view_all.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 toJobListingActivities();
+             }
+         });
          /*
          * Popular Jobs Sections recycler View
          * */
@@ -83,7 +94,20 @@ public class MainActivity extends AppCompatActivity {
          popular_jobs_view.setLayoutManager(popular_layout_manager);
          popularJobAdapter=new PopularJobAdapter(popular_jobs_list,MainActivity.this);
          popular_jobs_view.setAdapter(popularJobAdapter);
+         /**/
+        popular_view_all=findViewById(R.id.popular_button);
+        popular_view_all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                toJobListingActivities();
+                }
+        });
 
+    }
+
+    public void toJobListingActivities(){
+        toJobListing=new Intent(MainActivity.this,JobListing.class);
+        startActivity(toJobListing);
 
     }
 }

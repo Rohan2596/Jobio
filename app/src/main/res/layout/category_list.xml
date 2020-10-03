@@ -10,7 +10,7 @@
         android:text="Full-Stack Developer"
         android:background="@drawable/category_background"
 
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:paddingLeft="10dp"
         android:paddingBottom="5dp"
         android:paddingRight="10dp"

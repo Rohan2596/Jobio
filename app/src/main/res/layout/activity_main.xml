@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <Toolbar
@@ -13,8 +14,8 @@
         android:layout_height="wrap_content"
         android:elevation="10dp"
         android:textAlignment="textStart"
+        android:navigationIcon="@drawable/ic_baseline_menu_24"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:title="@string/app_name"
         android:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
         tools:ignore="MissingConstraints" />
 
@@ -38,7 +39,7 @@
                 android:fontFamily="@font/poppins"
                 android:text="@string/user_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:textStyle="normal" />
 
             <ImageView
@@ -59,7 +60,7 @@
             android:fontFamily="@font/poppins"
             android:text="@string/main_text"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/colorWhite"
             android:textStyle="bold" />
 
         <include
@@ -89,7 +90,7 @@
                     android:layout_weight="0.25"
                     android:text="@string/popular_jobs"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/colorWhite"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -131,7 +132,7 @@
                     android:layout_weight="0.25"
                     android:text="@string/category_text"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/colorWhite"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -175,7 +176,7 @@
                     android:layout_weight="0.25"
                     android:text="@string/recent_jobs"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textColor="@color/colorBlack"
+                    android:textColor="@color/colorWhite"
                     android:textStyle="bold" />
 
                 <ImageView

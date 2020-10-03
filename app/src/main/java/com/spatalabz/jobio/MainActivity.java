@@ -1,11 +1,14 @@
 package com.spatalabz.jobio;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList popular_jobs_list=new ArrayList();
 
 
+    @SuppressLint("ResourceAsColor")
+    @RequiresApi(api = Build.VERSION_CODES.P)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,19 +64,19 @@ public class MainActivity extends AppCompatActivity {
         * Recent Jobs Recycler View Setup.
         * */
 
-        recent_jobs_list.add(new Job("Product Engineer","Uber","$70/hr","$70k/yr"));
+        recent_jobs_list.add(new Job("Product Engineer","Google","$70/hr","$70k/yr"));
         recent_jobs_list.add(new Job("UI/UX Engineer","Google","$100/hr","$70k/yr"));
-        recent_jobs_list.add(new Job("Software Engineer","Microsoft","$60/hr","$70k/yr"));
-        recent_jobs_list.add(new Job("Data Engineer","Saptalabz Solutions","$40/hr","$70k/yr"));
-        recent_jobs_list.add(new Job("Public Relations","Amazon","$80/hr","$70k/yr"));
-        recent_jobs_list.add(new Job("Lead Manager","Apple","$120/hr","$70k/yr"));
+        recent_jobs_list.add(new Job("Software Engineer","Google","$60/hr","$70k/yr"));
+        recent_jobs_list.add(new Job("Data Engineer","Google","$40/hr","$70k/yr"));
+        recent_jobs_list.add(new Job("Public Relations","Google","$80/hr","$70k/yr"));
+        recent_jobs_list.add(new Job("Lead Manager","Google","$120/hr","$70k/yr"));
 
         recent_layout_manager=new LinearLayoutManager(MainActivity.this,LinearLayoutManager.VERTICAL,false);
          recentJobsAdapter=new RecentJobsAdapter(recent_jobs_list,MainActivity.this);
          recent_jobs_view=findViewById(R.id.recent_job_recycler_view);
          recent_jobs_view.setLayoutManager(recent_layout_manager);
          recent_jobs_view.setAdapter(recentJobsAdapter);
-
+         recent_view_all=findViewById(R.id.recent_viewAll);
          recent_view_all.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
@@ -81,12 +86,12 @@ public class MainActivity extends AppCompatActivity {
          /*
          * Popular Jobs Sections recycler View
          * */
-        popular_jobs_list.add(new Job("Product Engineer","Uber","$70/hr","$70k/yr"));
+        popular_jobs_list.add(new Job("Product Engineer","Google","$70/hr","$70k/yr"));
         popular_jobs_list.add(new Job("UI/UX Engineer","Google","$100/hr","$100k/yr"));
-        popular_jobs_list.add(new Job("Software Engineer","Microsoft","$60/hr","$50k/yr"));
-        popular_jobs_list.add(new Job("Data Engineer","Saptalabz Solutions","$40/hr","$80k/yr"));
-        popular_jobs_list.add(new Job("Public Relations","Amazon","$80/hr","$200k/yr"));
-        popular_jobs_list.add(new Job("Lead Manager","Apple","$120/hr","$220k/yr"));
+        popular_jobs_list.add(new Job("Software Engineer","Google","$60/hr","$50k/yr"));
+        popular_jobs_list.add(new Job("Data Engineer","Google","$40/hr","$80k/yr"));
+        popular_jobs_list.add(new Job("Public Relations","Google","$80/hr","$200k/yr"));
+        popular_jobs_list.add(new Job("Lead Manager","Google","$120/hr","$220k/yr"));
 
 
         popular_jobs_view=findViewById(R.id.popular_recycler_view);

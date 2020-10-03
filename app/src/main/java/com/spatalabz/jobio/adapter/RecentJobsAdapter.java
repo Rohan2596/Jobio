@@ -15,6 +15,7 @@ import com.spatalabz.jobio.model.Job;
 
 import java.util.ArrayList;
 
+import static com.spatalabz.jobio.R.drawable.ic_google;
 import static com.spatalabz.jobio.R.drawable.ic_launcher_background;
 import static com.spatalabz.jobio.R.drawable.ic_launcher_foreground;
 
@@ -43,7 +44,7 @@ public class RecentJobsAdapter extends RecyclerView.Adapter<RecentJobsAdapter.My
         holder.rc_title.setText(recentJobList.get(position).getTitle());
         holder.rc_company.setText(recentJobList.get(position).getCompany());
         holder.rc_WagePerHour.setText(recentJobList.get(position).getWagePerHour());
-        holder.rc_logo.setImageResource(ic_launcher_foreground);
+        holder.rc_logo.setImageResource(ic_google);
 
     }
 

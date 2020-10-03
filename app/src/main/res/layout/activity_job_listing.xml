@@ -5,10 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".JobListing">
-    <TextView
-        android:text="Job Listing Activities"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <Toolbar
+        android:id="@+id/job_listing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:textAlignment="center"
+        android:title="Jobs"
+        android:titleTextColor="@color/colorWhite"
+        android:navigationIcon="@drawable/ic_baseline_menu_24"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:ignore="MissingConstraints" />
 
 </LinearLayout>

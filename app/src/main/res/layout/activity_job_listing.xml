@@ -37,7 +37,13 @@
             android:textColor="@color/colorWhite"
             android:textStyle="normal" />
 
-        <include layout="@layout/jobs_layout"></include>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/job_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -4,20 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorPrimary"
+    android:orientation="vertical"
     tools:context=".JobListing">
+
     <Toolbar
         android:id="@+id/job_listing_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="10dp"
-        android:textAlignment="center"
-        android:title="Jobs"
-        android:titleTextColor="@color/colorWhite"
         android:navigationIcon="@drawable/ic_baseline_menu_24"
+        android:textAlignment="center"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="Jobs"
         android:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+        android:titleTextColor="@color/colorWhite"
         tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="20 Job Opportunity Found"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorWhite"
+            android:textStyle="normal" />
+
+        <include layout="@layout/jobs_layout"></include>
+    </LinearLayout>
 
 </LinearLayout>
